@@ -19,7 +19,7 @@ p{
   margin-left: 700px;
   margin-top: 10px;
   margin-bottom: 20px;
-  width: 100px;
+  width: 300px;
   text-align: center;
   border: 2px dotted;
   border-radius: 5px;
@@ -31,4 +31,85 @@ p{
   font-style: italic;
   font-weight: 900;
   border-radius: 10px;
+}
+.grid_container{
+  margin-left: 500px;
+  margin-top: 20px;
+  height: 50vh;
+  width: 50vh;
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "P P Q Q R R"
+    "P P X X R R"
+    "P P Y Y Y Z"
+}
+.box{
+  background-color: crimson;
+  border: 1px solid white;
+}
+.box_one{
+  grid-area: P;
+}
+
+.box_two{
+  grid-area: Q;
+}
+
+.box_three{
+  grid-area: R;
+}
+
+.box_four{
+  grid-area: X;
+}
+
+.box_five{
+  grid-area: Y;
+}
+
+.box_six{
+  grid-area: Z;
+}
+
+                /*Media Query*/
+@media screen and (max-width: 1920px) {
+  .box{
+    background-color: red;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .box{
+    background-color:orange;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .box{
+    background-color:yellow;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .box{
+    background-color:green;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .box{
+    background-color:skyblue;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .box{
+    background-color:blue;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box{
+    background-color: violet;
+  }
+}
+@media screen and (max-width: 480px) {
+  .box{
+    background-color:white;
+  }
 }
